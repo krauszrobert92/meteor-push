@@ -1,7 +1,7 @@
 /* globals Notification */
+import { webPushSubscribe, webPushUnsubscribe } from 'meteor/krauszrobert92:push'
 import { Meteor } from 'meteor/meteor'
 import React, { Component } from 'react'
-import { webPushSubscribe, webPushUnsubscribe } from 'meteor/activitree:push'
 
 // IMPORTANT: you may want to consider to unsubscribe when you log out to prevent a non logged in user from receiving notifications..
 

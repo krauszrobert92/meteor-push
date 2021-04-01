@@ -1,5 +1,5 @@
+import WebPush, { CordovaPush } from 'meteor/krauszrobert92:push'
 import { Meteor } from 'meteor/meteor'
-import WebPush, { CordovaPush } from 'meteor/activitree:push'
 
 Meteor.startup(() => {
   if (Meteor.isCordova) {

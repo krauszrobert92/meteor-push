@@ -3,6 +3,6 @@
 
 <img alt="Activitree" src="https://assets.activitree.com/images/ad_banner.jpg" width="100%">
 
-meteor add activitree:push
+meteor add krauszrobert92:push
 
 TO DO, for now info available at: https://github.com/activitree/meteor-push/blob/master/README.md

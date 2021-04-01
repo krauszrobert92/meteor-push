@@ -1,5 +1,5 @@
 /* globals Assets */
-import { Push } from 'meteor/activitree:push'
+import { Push } from 'meteor/krauszrobert92:push'
 // the following folder/location of your choice. It contains your android Firebase-Admin config file.
 import { serviceAccountData } from '/server/private/serviceAccount'
 

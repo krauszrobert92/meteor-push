@@ -3,18 +3,18 @@
 
 <img alt="Activitree" src="https://assets.activitree.com/images/ad_banner.jpg" width="100%">
 
-meteor add activitree:push
+meteor add krauszrobert92:push
 
 ** If you are looking for a more complex implementation of a Meteor PWA with Notifications, Offline Caching and Offline experience, please visit this repo: https://github.com/activitree/Meteor-PWA-Explained
 
-As of 2.0.6, activitree:push looks for a Firebase configuration (client side) and if one is found, the package calls for an installation of `/firebase-messaging-sw.js` otherwise it will default to `sw.js`. You are expected to have both files in your `/public` folder if you plan to use Web Push notifications. Documentation here: https://github.com/activitree/Meteor-PWA-Explained/blob/master/3_Service_workers.md
+As of 2.0.6, krauszrobert92:push looks for a Firebase configuration (client side) and if one is found, the package calls for an installation of `/firebase-messaging-sw.js` otherwise it will default to `sw.js`. You are expected to have both files in your `/public` folder if you plan to use Web Push notifications. Documentation here: https://github.com/activitree/Meteor-PWA-Explained/blob/master/3_Service_workers.md
 
 
 * Add your configuration in startup/client: https://github.com/activitree/meteor-push/blob/master/example/app/startup/client/index.js
 
 * Add your configuration in startup/server: https://github.com/activitree/meteor-push/blob/master/example/app/startup/server/index.js . This step requires the existence of a Firebase configuration file.
 
-* Find an example for the Web Push client side implementation. This requires extra learning from other sources in order to understand how Web Push works, dos and donts: https://github.com/activitree/meteor-push/blob/master/example/app/handle_WebPush_In_UX/Notifications.js . Note the use of 2 hooks: ```import { webPushSubscribe, webPushUnsubscribe } from 'meteor/activitree:push' ```
+* Find an example for the Web Push client side implementation. This requires extra learning from other sources in order to understand how Web Push works, dos and donts: https://github.com/activitree/meteor-push/blob/master/example/app/handle_WebPush_In_UX/Notifications.js . Note the use of 2 hooks: ```import { webPushSubscribe, webPushUnsubscribe } from 'meteor/krauszrobert92:push' ```
 
 * Implement a method that sends a push message. In general, you would have a collection where you keep track of user Notifications (independent of this package). Think Facebook, Notifications area where you see a history of all your notifications. Insert a notification and then Push it to the user.
 

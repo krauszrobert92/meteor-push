@@ -42,7 +42,7 @@ Simplified development path: https://github.com/activitree/meteor-push/tree/mast
   * web.js Contains the arhitecture for registering a browser/PWA (get a token, save to browser storage for browser UX use,     save the token in MongoDB. Also contains the necessary hooks for developer's convenience.
   * cordova.js Contains the arhitecture for registering a Cordova App (get a token, save to device storage for App UX use,       save the token in MongoDB)
   For cordova please find the Cordova specific listeneres here: https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/API.md#pushonevent-callback
-In activitree:push, listeners are best set in client/startup using 'CordovaPush.push'. Example:
+In krauszrobert92:push, listeners are best set in client/startup using 'CordovaPush.push'. Example:
 
 ```javascript
 CordovaPush.push.on('notification', data => {
@@ -64,7 +64,7 @@ For a successful processing of Android, please have all defaults set (althoug yo
 * Get a firebase server account: https://stackoverflow.com/questions/40799258/where-can-i-get-serviceaccountcredentials-json-for-firebase-admin/40799378
 Or visit here: https://console.firebase.google.com/project/**YOUR_PROJECT**/settings/serviceaccounts/adminsdk
 
-meteor add activitree:push
+meteor add krauszrobert92:push
 
 All settings suggested are what worked in testing but you are free to change everything indeed.
 The Android and IOS ware succesfuly built with Meteor. I mention this because before 1.8.1 I could only build Android with Android Studio.
@@ -75,7 +75,7 @@ First read this article to understand the concept and workflow: https://webengag
 
 Copy the worker file in the Example /public to your public folder. This needs to be available at https://www.your_address.com/firebase-messaging-sw.js. This worker is responsible for handling backgroud messages.
 
-You can import two hooks: ``` import { webPushSubscribe, webPushUnsubscribe } from 'meteor/activitree:push' ```
+You can import two hooks: ``` import { webPushSubscribe, webPushUnsubscribe } from 'meteor/krauszrobert92:push' ```
 Find the example in example/handle_WebPush_In_UX/Notification.js (React version). The method used for sending the message is at imports/api/collection/notifications/methods.js
 
 # IOS
@@ -153,7 +153,7 @@ This was tested with:
 * cordova-plugin-device 2.0.2
 
 
-Google release notes for libraries used by activitree:push:
+Google release notes for libraries used by krauszrobert92:push:
 
 https://firebase.google.com/support/release-notes/admin/node
 https://firebase.google.com/support/release-notes/js
