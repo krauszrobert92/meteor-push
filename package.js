@@ -22,7 +22,8 @@ Package.onUse(api => {
   api.use(['ecmascript'])
 
   api.use(['tracker'], ['web.browser', 'web.cordova'])
-  api.use(['accounts-base'], ['web.browser', 'web.cordova', 'server'], { weak: true })
+  api.use(['accounts-base@2.0.0'], ['web.browser', 'web.cordova', 'server'], { weak: true })
+  //api.use([], ['web.browser', 'web.cordova', 'server'], { weak: true }) // I removed accounts-base for meteor update
 
   api.use([
     'ecmascript',
