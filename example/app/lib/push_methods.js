@@ -2,8 +2,8 @@
 // This method is the generalized method for both Client and Server. In the client folder you can find an example of
 // how this method is being called.
 
-import { Push } from 'meteor/krauszrobert92:push'
 import { ValidatedMethod } from 'meteor/mdg:validated-method'
+//import { Push } from 'meteor/krauszrobert92:push'
 import SimpleSchema from 'simpl-schema'
 
 export const userPushNotification = new ValidatedMethod({
