@@ -14,7 +14,7 @@ Npm.depends({
 
 Cordova.depends({
   // 'phonegap-plugin-push': '2.3.0',
-  "@havesource/cordova-plugin-push": "3.0.0",
+  "@havesource/cordova-plugin-push": "3.0.1",
   'cordova-plugin-device': '2.0.3'
 })
 
